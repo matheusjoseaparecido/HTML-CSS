@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        main {
+            width: 100vw;
+            height: 100vh;
+        }
+        p {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div id="contador">...</div>
+        <input type="button" value="Começar" onclick="começar()">
+    </main>
+    <script>
+        function começar(){
+            let contador = document.querySelector('div#contador')
+            for(let c = 1; c < 10000; c++) {
+                contador.innerHTML += `${c}`
+            }
+        }
+    </script>
+</body>
+</html>
